@@ -42,7 +42,7 @@ const Login = () => {
           className="inline-flex items-center justify-center w-full px-4 py-2 text-m font-medium text-black bg-transparent hover:bg-gray-200"
 
         onClick={toggleDropdown}>
-            <a href="#" className="text-1g font-semibold text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-500">Login</a>
+            <a href="#" className="text-1g font-semibold text-indigo-100 transition duration-000 hover:text-indigo-100 active:text-indigo-100">Login</a>
     
         </button>
         </a>
@@ -56,7 +56,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'User' ? 'bg-gray-100' : 'hover:bg-gray-100'
+              selectedOption === 'User' ? 'bg-indigo-100' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('User')}
           >
@@ -65,7 +65,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'Admin' ? 'bg-gray-100' : 'hover:bg-gray-100'
+              selectedOption === 'Admin' ? 'bg-indigo-100' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Admin')}
           >
@@ -74,7 +74,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'Moderator' ? 'bg-gray-100' : 'hover:bg-gray-100'
+              selectedOption === 'Moderator' ? 'bg-indigo-100' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Moderator')}
           >
