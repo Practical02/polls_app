@@ -33,7 +33,7 @@ const Login = () => {
         <a href="#" className="hidden h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-100 active:bg-gray-200 sm:flex sm:h-20 sm:w-20 md:h-24 md:w-24">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/> </svg>
 
-          <a href="#" className="text-lg font-semibold text-indigo-500">Home</a>
+          <a href="#" className="text-lg font-semibold text-blue-400">Home</a>
         </a>
           <a href="#" className="hidden h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover: active:bg-gray-200 sm:flex sm:h-20 sm:w-20 md:h-24 md:w-24">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
@@ -42,7 +42,7 @@ const Login = () => {
           className="inline-flex items-center justify-center w-full px-4 py-2 text-m font-medium text-black bg-transparent hover:bg-gray-200"
 
         onClick={toggleDropdown}>
-            <a href="#" className="text-1g font-semibold text-indigo-100 transition duration-000 hover:text-indigo-100 active:text-indigo-100">Login</a>
+            <a href="#" className="text-1g font-semibold text-gray-500 transition duration-000 hover:text-blue-400 active:text-indigo-100">Login</a>
     
         </button>
         </a>
@@ -56,7 +56,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'User' ? 'bg-indigo-100' : 'hover:bg-blue-400'
+              selectedOption === 'User' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('User')}
           >
@@ -65,7 +65,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'Admin' ? 'bg-indigo-100' : 'hover:bg-blue-400'
+              selectedOption === 'Admin' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Admin')}
           >
@@ -74,7 +74,7 @@ const Login = () => {
           <button
             type="button"
             className={`block px-4 py-2 text-sm ${
-              selectedOption === 'Moderator' ? 'bg-indigo-100' : 'hover:bg-blue-400'
+              selectedOption === 'Moderator' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Moderator')}
           >
@@ -86,11 +86,11 @@ const Login = () => {
         
         <a href="#" className="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-100 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/> </svg>
-         <a href="#" className="text-1g font-semibold text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+         <a href="#" className="text-1g font-semibold text-gray-500 transition duration-100 hover:text-blue-400 active:text-blue-400">About</a>
         </a>
         <a href="#" className="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-100 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/> </svg>
-         <a href="#" className="text-1g font-semibold text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Help</a>
+         <a href="#" className="text-1g font-semibold text-gray-500 transition duration-100 hover:text-blue-400 active:text-blue-400">Help</a>
         </a>
 
         </div>
