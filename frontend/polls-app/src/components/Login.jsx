@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 const Logo = () => (
     // <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mr-2">
     //   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -59,8 +60,9 @@ const Login = () => {
               selectedOption === 'User' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('User')}
-          >
+          ><Link to={'user'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }}>
             User
+            </Link>
           </button>
           <button
             type="button"
@@ -68,8 +70,9 @@ const Login = () => {
               selectedOption === 'Admin' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Admin')}
-          >
+          ><Link to={'adminlogin'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }}>
             Admin
+            </Link>
           </button>
           <button
             type="button"
@@ -77,8 +80,9 @@ const Login = () => {
               selectedOption === 'Moderator' ? 'bg-light-white' : 'hover:bg-blue-400'
             }`}
             onClick={() => handleOptionSelect('Moderator')}
-          >
+          ><Link to={'modlogin'} style={{ textDecoration: 'none', color: 'white', backgroundColor: 'purple' }}>
             Moderator
+            </Link>
           </button>
         </div>
       )}
@@ -90,7 +94,7 @@ const Login = () => {
         </a>
         <a href="#" className="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-100 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/> </svg>
-         <a href="#" className="text-1g font-semibold text-gray-500 transition duration-100 hover:text-blue-400 active:text-blue-400">Help</a>
+         <a href="#" className="text-1g font-semibold text-gray-500 transition duration-100 hover:text-blue-400 active:text-blue-00">Help</a>
         </a>
 
         </div>
@@ -101,7 +105,7 @@ const Login = () => {
                         <h1 className="text-black-800 mb-4 text-4xl font-bold sm:text-5xl md:mb-8 md:text-6xl">Find your<br />style online</h1>
                         <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
                     </div></div>
-                <div class="flex justify-center items-center min-h-screen">
+                {/* <div class="flex justify-center items-center min-h-screen">
                     <div class="w-96 p-6 bg-white rounded shadow-lg">
                         <h1 class="text-2xl font-semibold mb-6">Login</h1>
                         <form>
@@ -118,7 +122,7 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
-                </div></>
+                </div>*/}</> 
     )
 }
 
