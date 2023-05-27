@@ -82,9 +82,8 @@ router.get("/:_id", async (req, res, next) => {
     if (!poll) {
       throw new Error("No poll found.");
     }
-
-    if (!poll.approved) {
-      throw new Error("Access denied. Poll not approved.");
+    if (user.role === "general" && !poll.approved) {
+      throw new Error("Access denied.");
     }
 
     res.status(200).json(poll);
@@ -93,7 +92,6 @@ router.get("/:_id", async (req, res, next) => {
     next(error);
   }
 });
-
 
 router.delete("/delete/:_id", auth, async (req, res, next) => {
   try {
