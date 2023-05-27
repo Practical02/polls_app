@@ -15,6 +15,10 @@ const Forms = () => {
                                 <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
                                 <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500" required></input>
                             </div>
+                            <div class="mb-6">
+                                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Confirm Password</label>
+                                <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500" required></input>
+                            </div>
                             <div>
                                 <button type="submit" class="w-full bg-indigo-500 text-white font-bold py-2 px-4 rounded hover:bg-indigo-700">Login</button>
                             </div>

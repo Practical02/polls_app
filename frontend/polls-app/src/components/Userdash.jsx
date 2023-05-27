@@ -1,14 +1,14 @@
+import { button } from "@material-tailwind/react";
 import { useState } from "react";
 const Userdash = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "Chart_fill" },
-    { title: "Inbox", src: "Chat" },
-    { title: "Accounts", src: "User", gap: true },
-    { title: "Schedule ", src: "Calendar" },
+    { title:"Profile", src: "User" },
+    { title: "Private Polls", src: "Chat" },
+    { title: "Results", src:"chart_fill" , gap: true },
+    { title: "Favourites", src: "Calendar" },
     { title: "Search", src: "Search" },
-    { title: "Analytics", src: "Chart" },
-    { title: "Files ", src: "Folder", gap: true },
+    { title: "Public Polls", src: "Chart" },
     { title: "Setting", src: "Setting" },
   ];
 
